@@ -16,12 +16,14 @@ h1 {
     'seven  eight   nine    plus'
     'four   five    six     minus'
     'one    two     three   divide'
-    'zero  enter   enter   multiply'
+    'zero  clear   enter   multiply'
     ;
+    grid-template-columns: 100px 100px 100px 100px;
     grid-gap: 10px;
     background-color: #2196F3;
     padding: 10px;
-    max-width: 600px;
+    justify-content: center;
+    max-width: 500px;
     margin: auto;
 }
 
@@ -32,15 +34,18 @@ h1 {
     font-size: 30px;
     text-decoration: none;
     border-radius: 4px;
+    
 }
 
 #screen-primary {
+    display: flex;
     grid-area: screen-primary;
     background-color: rgba(255, 255, 255, 0.8);
-    text-align: right;
-    padding: 20px 50px;
+    justify-content: right;
+    padding-right: 50px;
+    align-items: center;
     font-size: 30px;
-    min-height: 1em;
+    min-height: 2em;
 }
 
 #screen-secondary {
@@ -62,6 +67,8 @@ h1 {
     font-size: 30px;
 }
 
+
+
 #one {grid-area: one;}
 #two {grid-area: two;}
 #three {grid-area: three;}
@@ -77,3 +84,4 @@ h1 {
 #divide {grid-area: divide;}
 #multiply {grid-area: multiply;}
 #enter {grid-area: enter;}
+#clear {grid-area: clear;}
